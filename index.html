@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Cat Room</title>
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<link href="css/smoothness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+	<link href="css/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+	<div id="menu">
+		<center>
+		<br><br>
+		<br><button id="laser">Laser</button>
+		<br><button id="twirl">Twirl</button>
+		<br><button id="wiggle">Wiggle</button>
+		<br><br>
+		<!--<br><button id="laser_calibrate">Laser Calibrate</button>-->
+	</div>
+	<div id="content">
+		<div id="container">
+			<div id="xyaxis" class="video" style="z-index: 2;"></div>
+			<div id="video-jwplayer_wrapper" class="video" style="z-index: 1;">
+				<object type="application/x-shockwave-flash" data="modules/jwplayer/jwplayer.flash.swf" width="100%" height="100%" bgcolor="#000000" id="video-jwplayer" name="video-jwplayer" tabindex="0">
+					<param name="allowfullscreen" value="true">
+					<param name="allowscriptaccess" value="always">
+					<param name="seamlesstabbing" value="true">
+					<param name="wmode" value="opaque">
+				</object>
+				<div id="video-jwplayer_aspect" style="display: none;"></div>
+				<div id="video-jwplayer_jwpsrv" style="position: absolute; top: 0px; z-index: 10;"></div>
+			</div>
+		</div>
+	<div>
+	<div id='dialog'>
+		<br>x-axis center: <input id="x_axis_center" value=550></input>
+		<br>y-axis center: <input id="y_axis_center" value=350></input>
+		<br>x-axis min: <input id="x_axis_min" value=700></input>
+		<br>x-axis max: <input id="x_axis_max" value=420></input>
+		<br>y-axis min: <input id="y_axis_min" value=440></input>
+		<br>y-axis max: <input id="y_axis_max" value=270></input>
+	</div>
+		<script src="modules/jwplayer/jwplayer.js"></script>
+		<script src="modules/jwplayer/player.js"></script>
+		<script src="js/control.js"></script>
+  </body>
+</html>
